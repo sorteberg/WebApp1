@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 
@@ -10,7 +11,7 @@ namespace MvcApplication.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = string.Format("Du kjører versjon {0}", Assembly.GetExecutingAssembly().GetName().Version);
 
             return View();
         }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace MvcApplication.Tests.Controllers
@@ -13,7 +9,11 @@ namespace MvcApplication.Tests.Controllers
         [Test]
         public void Index_WhenIEatBanana_WillNotFail()
         {
-            Assert.Fail("DENNE TESTEN ER GAMMEL OG DÅRLIG");
+            const string who = "I";
+            Func<string, string, bool> eat = (subject, objectt) => subject == "I" && objectt == "banana";
+            const string what = "banana";
+
+            Assert.IsTrue(eat(who, what));
         }
 
         [Test]

@@ -15,15 +15,20 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Prod|Any CPU = Prod|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B1787BCA-F0B9-48AE-838D-49291AEBCA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B1787BCA-F0B9-48AE-838D-49291AEBCA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1787BCA-F0B9-48AE-838D-49291AEBCA2F}.Prod|Any CPU.ActiveCfg = Prod|Any CPU
+		{B1787BCA-F0B9-48AE-838D-49291AEBCA2F}.Prod|Any CPU.Build.0 = Prod|Any CPU
 		{B1787BCA-F0B9-48AE-838D-49291AEBCA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1787BCA-F0B9-48AE-838D-49291AEBCA2F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{982CB83A-30F8-4BA5-8C19-A20D1A045496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{982CB83A-30F8-4BA5-8C19-A20D1A045496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982CB83A-30F8-4BA5-8C19-A20D1A045496}.Prod|Any CPU.ActiveCfg = Prod|Any CPU
+		{982CB83A-30F8-4BA5-8C19-A20D1A045496}.Prod|Any CPU.Build.0 = Prod|Any CPU
 		{982CB83A-30F8-4BA5-8C19-A20D1A045496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{982CB83A-30F8-4BA5-8C19-A20D1A045496}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
+using HtmlAgilityPack;
 
 namespace MvcApplication.Controllers
 {
@@ -12,6 +13,11 @@ namespace MvcApplication.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = string.Format("Du kjører versjon {0}", Assembly.GetExecutingAssembly().GetName().Version);
+            ViewBag.Debug = "JAAA!";
+
+#if DEBUG
+            ViewBag.Debug = true;
+#endif
 
             return View();
         }

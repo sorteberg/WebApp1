@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Deploy";
+}
+
+@if (ViewBag.Debug)
+{
+    <style>
+        #deploy {
+            background: #cccccc;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+        #toggle {
+            width: 100%;
+        }
+        #octopus {
+            display: none;
+            /*height: 1000px;*/
+            width: 100%;
+        }
+        #anchor {
+            height: 40px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("#deploy").click(function () {
+                var iframe = $("#octopus");
+                var windowHeight = $(window).height();
+                var anchorHeight = $("#anchor").height();
+                iframe.height(windowHeight - anchorHeight);
+                if (iframe.is(":visible")) {
+                    iframe.hide(300);
+                    $("#toggle").text("^");
+                } else {
+                    iframe.show(300);
+                    $("#toggle").text("v");
+                }
+            });
+        });
+    </script>
+    <div id="deploy">
+        <div id="anchor">
+            <button id="toggle">^</button>
+        </div>
+        <iframe id="octopus" src="http://localhost:8000"></iframe>
+    </div>
+}
